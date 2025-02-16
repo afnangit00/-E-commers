@@ -1,0 +1,54 @@
+
+ <div class="container">
+        <div class="row mt-2 ml-auto">
+        <a href="/admin/add-products" class="btn btn-success ml-auto">Create Cars</a> 
+        </div>
+      
+         <div class="row mt-2 " >
+    <div class="col bg-success " >
+      NO
+    </div>
+     <div class="col bg-secondary">
+      Name
+    </div>
+     <div class="col bg-secondary">
+      Color
+    </div>
+     <div class="col bg-secondary">
+      Company
+    </div>
+    <div class="col bg-secondary">
+      Price
+    </div>
+    <div class="col bg-secondary">
+      image
+      </div>
+    </div>
+
+        {{#each products}}
+  <div class="row" >
+    <div class="col " >
+      {{this.no}}
+    </div>
+     <div class="col ">
+        {{this.name}}
+    </div>
+     <div class="col ">
+      {{this.color}}
+    </div>
+     <div class="col ">
+      {{this.company}}
+    </div>
+    <div class="col ">
+        {{this.price}}
+    </div>
+    <div class="col ">
+      <img  style="height: 70px; width:120px; margin-top:8px;"
+      src="{{this.image}}" alt="">
+    </div>
+ 
+</div>
+ {{/each}}
+
+
+ </div>
