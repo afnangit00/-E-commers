@@ -12,6 +12,7 @@ module.exports={
                 return new Promise(async(resolve,reject)=>{
                         let carsroom= await db.get().collection(collection.CARS_COLLECTION).find().toArray()
                         resolve(carsroom)
+                        
                 })
         }
 }

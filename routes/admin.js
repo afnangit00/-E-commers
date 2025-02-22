@@ -26,12 +26,12 @@ router.post('/add-products',(req,res)=>{
     console.log(_id)
     image.mv('./public/cars-pics/'+_id+'.jpg',(err,done)=>{
       if(!err){
-        res.render('admin/add-products')
+        res.render('admin/add-products');
       }else{
         console.log(err)
       }
     })
-    res.render('admin/add-products')
+    res.render('admin/add-products');
   })
 
 })
